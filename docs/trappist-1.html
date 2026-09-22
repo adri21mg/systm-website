@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101110">
+  <meta name="description" content="A short sci-fi horror game. Extract energy from a red dwarf, tune signals, and power distant worlds. Do your job. Don't ask what really keeps the station running.">
+  <title>Systm — Studio</title>
+  <link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="transitions.js"></script>
+  <script src="content.js" defer></script>
+  <script src="site.js" defer></script>
+</head>
+<body class="game-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header compact wrap">
+    <a class="brand-link" href="index.html" aria-label="Systm home"><img class="studio-logo" src="media/systm.svg" width="3260" height="845" alt="Systm"></a>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="trappist-1.html" aria-current="page">TRAPPIST-1</a><a href="about.html">About</a><a href="mailto:adri.21mg@gmail.com">Contact <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="game-hero" aria-labelledby="trappist-title">
+      <img class="hero-art" src="media/trappist-hero-1600.webp" srcset="media/trappist-hero-800.webp 800w, media/trappist-hero-1600.webp 1600w" sizes="100vw" width="1600" height="852" alt="An empty cabin room, its monitors reading no connection, with a red dwarf on the main screen." fetchpriority="high">
+      <div class="hero-center">
+        <h1 id="trappist-title" class="logo-glitch"><img class="game-logo" src="media/trappist.svg" width="1350" height="371" alt="TRAPPIST-1"></h1>
+        <p class="eyebrow">A short sci-fi horror game</p>
+        <div class="hero-actions">
+          <a class="game-button steam-button" data-steam-link hidden>Buy now <img class="steam-brand" src="media/steam.webp" width="196" height="60" alt="Steam"></a>
+          <button class="game-button steam-button" data-steam-pending disabled aria-describedby="steam-note">Buy now <img class="steam-brand" src="media/steam.webp" width="196" height="60" alt="Steam"></button>
+          <a class="game-button secondary" href="#game-details">Watch trailer <span aria-hidden="true">↓</span></a>
+        </div>
+        <p id="steam-note" class="steam-note" data-steam-pending>Steam page coming soon.</p>
+      </div>
+      <a class="hero-scroll" href="#game-details" aria-label="Scroll to game details"><span aria-hidden="true">↓</span></a>
+    </section>
+    <div class="wrap game-details" id="game-details">
+    <section class="game-intro" aria-labelledby="game-intro-title">
+      <h2 id="game-intro-title">Do your job.</h2>
+      <div class="game-intro-copy"><p>Extract energy from a red dwarf, tune signals, and power distant worlds.</p><p class="ominous">Don’t ask what really keeps the station running.</p></div>
+    </section>
+    <figure class="trailer" id="trailer">
+      <video controls playsinline preload="none" poster="media/station-1-1280.webp" width="1280" height="720" aria-label="TRAPPIST-1 trailer" aria-describedby="trailer-description"><source src="media/trailer.mp4" type="video/mp4">Your browser cannot play this video. <a href="media/trailer.mp4">Open the trailer</a>.</video>
+      <figcaption><span>TRAPPIST-1 / Trailer</span><span>00:49</span></figcaption>
+      <p class="sr-only" id="trailer-description">Gameplay footage shows the station’s controls, signal tuning, messages, and energy extraction from the star.</p>
+    </figure>
+    <p class="game-premise">Far from the Solar System, the colonies of TRAPPIST-1 depend on an energy network built around their star.<br><span>Your job is simple.</span></p>
+    <section class="chapter" aria-labelledby="colonies-title">
+      <div class="chapter-copy"><h2 id="colonies-title">Keep the<br>colonies alive.</h2><p>Move the station. Extract energy.<br>Send it where it’s needed.</p></div>
+      <figure class="gameplay-loop"><picture><source srcset="media/signal-1280.webp" media="(prefers-reduced-motion: reduce)"><img src="media/signal.gif" width="640" height="360" alt="Animated gameplay: tuning the station’s controls and sending a signal." loading="lazy" data-animated-image data-still="media/signal-1280.webp" data-animation="media/signal.gif"></picture><figcaption>Find the signal. Keep the power flowing.</figcaption><button class="motion-toggle" type="button" aria-label="Pause signal animation" data-name="signal" aria-pressed="false" hidden>Pause</button></figure>
+    </section>
+    <section class="chapter reverse" aria-labelledby="maintenance-title">
+      <div class="chapter-copy"><h2 id="maintenance-title">The station needs<br>maintenance.</h2><p>There’s work to do.<br>Even this far from home.</p></div>
+      <figure><a class="screenshot-link" href="media/station-6-1920.webp" aria-label="View the station cooling area screenshot at full size"><img src="media/station-6-1280.webp" srcset="media/station-6-640.webp 640w, media/station-6-1280.webp 1280w" sizes="(max-width: 760px) calc(100vw - 36px), 680px" width="1920" height="1080" alt="The station’s blue-lit cooling area, with metal walkways and exposed pipes." loading="lazy"></a></figure>
+    </section>
+    <section class="chapter last-chapter" aria-labelledby="wrong-title">
+      <div class="chapter-copy"><h2 id="wrong-title">Something<br>is wrong.</h2><p>Don’t ask what really keeps<br>the station running.</p></div>
+      <figure class="gameplay-loop"><picture><source srcset="media/hallway-1280.webp" media="(prefers-reduced-motion: reduce)"><img src="media/hallway.gif" width="640" height="360" alt="Animated gameplay: walking down an empty industrial corridor." loading="lazy" data-animated-image data-still="media/hallway-1280.webp" data-animation="media/hallway.gif"></picture><button class="motion-toggle" type="button" aria-label="Pause corridor animation" data-name="corridor" aria-pressed="false" hidden>Pause</button></figure>
+    </section>
+    <section class="steam-section" aria-label="TRAPPIST-1 on Steam">
+      <p>A game by Systm.</p>
+      <a class="game-button steam-button" data-steam-link hidden>On <img class="steam-brand" src="media/steam.webp" width="196" height="60" alt="Steam"></a>
+      <button class="game-button steam-button" data-steam-pending disabled aria-describedby="steam-bottom-note">On <img class="steam-brand" src="media/steam.webp" width="196" height="60" alt="Steam"></button>
+      <p id="steam-bottom-note" class="steam-note" data-steam-pending>Steam page coming soon.</p>
+    </section>
+    <section class="screenshot-gallery" aria-labelledby="screenshots-title">
+      <div class="gallery-heading"><h2 id="screenshots-title">Screenshots</h2><p>Take a closer look.</p></div>
+      <div class="screenshot-thumbnails">
+        <a href="media/station-1-1920.webp" data-gallery><img src="media/station-1-thumb.webp" width="400" height="225" alt="Cabin room overlooking the star" loading="lazy"></a>
+        <a href="media/station-2-1920.webp" data-gallery><img src="media/station-2-thumb.webp" width="400" height="225" alt="The red dwarf through the station window" loading="lazy"></a>
+        <a href="media/station-3-1920.webp" data-gallery><img src="media/station-3-thumb.webp" width="400" height="225" alt="Signal tuning equipment" loading="lazy"></a>
+        <a href="media/station-4-1920.webp" data-gallery><img src="media/station-4-thumb.webp" width="400" height="225" alt="HEX control for moving the cabin between nodes, with its current energy level on the left" loading="lazy"></a>
+        <a href="media/station-5-1920.webp" data-gallery><img src="media/station-5-thumb.webp" width="400" height="225" alt="The empty station corridor" loading="lazy"></a>
+        <a href="media/station-6-1920.webp" data-gallery><img src="media/station-6-thumb.webp" width="400" height="225" alt="The station’s cooling area" loading="lazy"></a>
+      </div>
+    </section>
+    </div>
+  </main>
+  <dialog class="image-viewer" aria-label="Screenshot viewer">
+    <div class="viewer-toolbar"><span data-gallery-counter aria-live="polite"></span><button type="button" data-gallery-close aria-label="Close screenshot viewer">Close <span aria-hidden="true">×</span></button></div>
+    <figure><img data-gallery-image width="1920" height="1080" alt=""><figcaption data-gallery-caption></figcaption></figure>
+    <div class="viewer-navigation"><button type="button" data-gallery-previous aria-label="Previous screenshot">← Previous</button><button type="button" data-gallery-next aria-label="Next screenshot">Next →</button></div>
+  </dialog>
+  <footer class="site-footer wrap"><span>© Systm <span data-year>2026</span></span><a href="mailto:adri.21mg@gmail.com">adri.21mg@gmail.com <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>
