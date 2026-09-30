@@ -1,7 +1,4 @@
-// Add the real store URL here when ready. No Steam URL was supplied.
-// Example shape only: https://store.steampowered.com/app/YOUR_APP_ID/
-// A disabled preview button is shown until this contains a valid official Steam URL.
-// Both Buy now and On Steam then become active links automatically.
+// Official coming-soon store page. Both Steam buttons use this address.
 window.SYSTM_CONTENT = Object.freeze({
-  steamUrl: '' // TODO: TRAPPIST-1 Steam store URL
+  steamUrl: 'https://store.steampowered.com/app/4987640/TRAPPIST1/'
 });

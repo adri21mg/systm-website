@@ -21,7 +21,7 @@ You can also open `docs/index.html` directly in a browser. The HTTP preview is p
 - `docs/trappist-1.html`: full-screen illustrated cover, game description, trailer, three gameplay sections, Steam buttons, and six-image thumbnail gallery.
 - `docs/about.html`: personal introduction and contact.
 - `docs/styles.css`: shared design and responsive layouts.
-- `docs/content.js`: **Steam URL placeholder**. Set `steamUrl` to the real official store address; both Buy now and On Steam become active links automatically. Until then, disabled preview buttons are shown with “Steam page coming soon.” No invented store URL.
+- `docs/content.js`: official Steam URL for TRAPPIST-1 (app 4987640). Both Wishlist on Steam and On Steam link to the coming-soon store page. Update the purchase wording when the game actually launches.
 - `docs/site.js`: Subtle cursor-follow movement, occasional horizontal logo glitch, screenshot viewer, trailer behavior, and current year.
 - `docs/transitions.js`: short pixel-block transitions between pages. A temporary sessionStorage entry carries the transition across navigation; no cookies or tracking. Modified clicks, external links, same-page anchors, and reduced-motion settings keep normal navigation.
 - `docs/media/`: optimized public copies of supplied assets.
