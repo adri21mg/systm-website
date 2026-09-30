@@ -10,7 +10,7 @@ All still images were visually inspected. GIFs were inspected at beginning, midd
 | Logos/TRAPPIST-NEGRO.svg | 1350 × 371; 95 KB | Black game lockup, including supplied STELLACME detail. Kept as SVG and inverted with CSS. Embedded source shadow preserved. |
 | Images/Adri.jpg | 400 × 400; 25 KB | Personal portrait. Used on About at a modest size, with a metadata-free WebP copy. |
 | Images/HeaderSteamTRAPPIST-1.png | 462 × 174; 132 KB | Low-resolution store capsule with baked-in title. Not selected; too small for the homepage. |
-| Images/SkeletonWithAKs.gif | 432 × 446; 4 frames; 136 KB | Absurd dancing skeleton with guns. Used small in the future-project teaser. Pause control and reduced-motion still included. |
+| Images/SkeletonWithAKs.gif | 432 × 446; 4 frames; 136 KB | Absurd dancing skeleton with guns. Used small in the future-project teaser. Loops continuously without pause controls. |
 | TRAPPIST-1PressStuff/Header.png | 1232 × 706; 1.21 MB | Composed game capsule. Inspected; separate title and gameplay image allow better responsive composition. |
 | TRAPPIST-1PressStuff/Logo.png | 1280 × 390; 60 KB | White raster game lockup. Inspected; SVG preferred. |
 | TRAPPIST-1PressStuff/Screenshot (1).png | 1920 × 1080; 1.24 MB | Cabin room overlooking the star. Trailer poster. |

@@ -53,13 +53,8 @@ a.text-link:hover, a.text-link:focus-visible { transform: translate(2px, -2px); 
 .next-game p:last-child { color: var(--muted); font-size: 14px; margin-top: 8px; }
 .skeleton { position: relative; flex: 0 0 106px; }
 .skeleton img { width: 106px; }
-.motion-toggle { display: block; margin: 6px auto 0; padding: 4px 12px; min-height: 30px; color: var(--muted); background: transparent; border: 0; cursor: pointer; font-family: var(--mono); font-size: 12px; text-decoration: underline; text-underline-offset: 3px; }
-.motion-toggle:hover { color: var(--text); }
 .gameplay-loop { position: relative; }
 .gameplay-loop picture img { width: 100%; }
-.gameplay-loop .motion-toggle { position: absolute; right: 10px; top: 10px; margin: 0; background: rgb(0 0 0 / .8); color: var(--text); opacity: 0; transition: opacity .15s ease; }
-.gameplay-loop:hover .motion-toggle, .gameplay-loop:focus-within .motion-toggle { opacity: 1; }
-@media (hover: none) { .gameplay-loop .motion-toggle { opacity: 1; } }
 .page-entering { background: #050605; }
 .page-entering body { visibility: hidden; }
 .pixel-wipe { position: fixed; inset: 0; z-index: 1000; display: grid; grid-template-columns: repeat(var(--wipe-columns), 1fr); grid-template-rows: repeat(var(--wipe-rows), 1fr); pointer-events: all; visibility: visible; }

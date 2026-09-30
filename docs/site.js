@@ -63,23 +63,6 @@ if (viewer && typeof viewer.showModal === 'function') {
   viewer.addEventListener('close', () => document.body.classList.remove('viewer-open'));
 }
 
-document.querySelectorAll('[data-animated-image]').forEach(animatedImage => {
-  const motionButton = animatedImage.closest('.skeleton, .gameplay-loop')?.querySelector('.motion-toggle');
-  if (!motionButton) return;
-  const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let paused = preference.matches;
-  const update = () => {
-    animatedImage.src = paused ? animatedImage.dataset.still : animatedImage.dataset.animation;
-    motionButton.hidden = preference.matches;
-    motionButton.textContent = paused ? 'Play' : 'Pause';
-    motionButton.setAttribute('aria-label', `${paused ? 'Play' : 'Pause'} ${motionButton.dataset.name || 'skeleton'} animation`);
-    motionButton.setAttribute('aria-pressed', String(paused));
-  };
-  motionButton.addEventListener('click', () => { paused = !paused; update(); });
-  preference.addEventListener('change', () => { paused = preference.matches; update(); });
-  update();
-});
-
 // The trailer is user-controlled. Gameplay uses genuine, continuously looping GIFs.
 const videos = [...document.querySelectorAll('video')];
 videos.forEach(video => video.addEventListener('play', () => {
