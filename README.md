@@ -63,3 +63,7 @@ TRAPPIST-1 now embeds the supplied YouTube video `rQwITmcYSuk` using youtube-noc
 ## LMMS-Collab identity and support
 
 The supplied `Assets/Logos/LMMS-Collab2.svg` is copied unchanged into `docs/media/lmms-collab.svg` and used on Home and the tool page. LMMS-Collab has a centered closing support section, with `Support me 3.gif` as the clickable Ko-fi invitation. This replaces the short message above the footer button. The shared footer button remains on every page; no floating widget is loaded.
+
+## Stylesheet caching
+
+All four pages reference `styles.css?v=<SHA-256 prefix>`. After editing the stylesheet, update the query value on all pages to the first 12 characters of its SHA-256 hash before publishing. This makes browsers request the matching stylesheet instead of reusing GitHub Pages' cached previous CSS. The LMMS cover now contains the full first GIF at a smaller centered width, with side fades.
