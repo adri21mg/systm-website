@@ -69,6 +69,8 @@ a.text-link:hover, a.text-link:focus-visible { transform: translate(2px, -2px); 
 .ominous { color: var(--muted); margin-top: 12px; font-size: 16px; }
 .game-actions { display: flex; flex-wrap: wrap; gap: 26px; margin-top: 22px; }
 .trailer { scroll-margin-top: 24px; }
+.youtube-trailer { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; background: #050505; }
+.youtube-trailer:focus-visible { outline: 2px solid var(--accent); outline-offset: 7px; }
 figcaption { margin-top: 12px; font-size: 12px; font-family: var(--mono); color: var(--muted); }
 .trailer figcaption { display: flex; justify-content: space-between; }
 .game-premise { max-width: 650px; margin: 85px auto 90px; text-align: center; font-size: 22px; line-height: 1.65; color: var(--muted); letter-spacing: -.02em; }
@@ -215,3 +217,62 @@ a.game-button:hover, a.game-button:focus-visible { color: #111; transform: trans
 @media (max-width: 540px) { .compact { gap: 15px; } .compact nav { width: 100%; gap: 22px; } }
 @media (max-width: 380px) { .compact .studio-logo { width: 100px; } nav { gap: 15px; font-size: 13px; } .compact nav { gap: 20px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } .game-art:hover .cover, .game-link:hover .arrow, nav a:hover, nav a:focus-visible, a.text-link:hover, a.text-link:focus-visible, .game-link:hover .game-caption .text-link, .game-link:focus-visible .game-caption .text-link { transform: none; } }
+/* Studio navigation: quiet rectangular targets; the game cover keeps its original links. */
+body:not(.game-page) nav { gap: 6px; flex-wrap: wrap; }
+body:not(.game-page) nav a { padding: 9px 14px; border: 1px solid transparent; transition: background .15s, color .15s, transform .15s; }
+body:not(.game-page) nav a[aria-current] { border-color: var(--line); text-decoration: none; }
+body:not(.game-page) nav a:hover, body:not(.game-page) nav a:focus-visible { background: var(--accent); border-color: var(--accent); color: var(--bg); text-shadow: none; }
+.game-link:hover .game-caption .text-link, .game-link:focus-visible .game-caption .text-link { background: var(--accent); }
+.site-footer { align-items: center; flex-wrap: wrap; }
+.support-link, .outline-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; padding: 10px 16px; border: 1px solid var(--line); text-decoration: none; transition: background .15s, color .15s, border-color .15s; }
+.support-link:hover, .outline-link:hover, .support-link:focus-visible, .outline-link:focus-visible { color: var(--bg); border-color: var(--accent); background: var(--accent); }
+.tool-teaser { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 40px; padding-block: 55px; border-bottom: 1px solid var(--line); }
+.tool-teaser .eyebrow, .tool-intro .eyebrow { color: var(--muted); margin-bottom: 20px; }
+.tool-teaser h2 { font-size: clamp(30px, 4vw, 46px); letter-spacing: -.06em; }
+.tool-teaser p { color: var(--muted); }
+.tool-teaser .outline-link { margin-top: 22px; font-size: 14px; }
+.tool-main { padding-top: 32px; }
+.tool-intro { padding-bottom: 48px; }
+.tool-intro h1 { font-size: clamp(42px, 8vw, 100px); letter-spacing: -.065em; }
+.tool-tagline { font-size: clamp(26px, 4vw, 40px); letter-spacing: -.035em; margin-top: 26px; }
+.tool-description { max-width: 540px; margin-top: 16px; color: var(--muted); font-size: 18px; }
+.demo-placeholder { min-height: 320px; border: 1px dashed var(--line); background: #151714; display: flex; flex-direction: column; justify-content: space-between; padding: 32px; }
+.demo-placeholder .eyebrow { color: var(--muted); }
+.demo-placeholder p { margin-top: 20px; font-size: clamp(26px, 4vw, 44px); letter-spacing: -.045em; }
+.demo-note { display: inline-block; margin-top: 14px; color: var(--accent); font-family: var(--mono); font-size: 12px; }
+.demo-placeholder figcaption { padding-top: 50px; }
+.tool-download { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding-block: 52px 64px; border-bottom: 1px solid var(--line); }
+.tool-download h2 { font-size: 30px; letter-spacing: -.04em; font-weight: 400; }
+.tool-download p { margin-top: 15px; color: var(--muted); }
+.tool-repository { text-align: right; }
+.tool-repository p { font-size: 12px; font-family: var(--mono); }
+/* One Ko-fi invitation per page, with the supplied transparent Sparkle mug GIF. */
+.site-footer .support-link { gap: 6px; padding: 5px 15px 5px 6px; border-color: #53564b; border-radius: 7px; background: #2e3129; color: #fff; font: 700 14px/1.4 Arial, Helvetica, sans-serif; }
+.site-footer .support-link img { flex: 0 0 48px; width: 48px; height: 48px; object-fit: contain; }
+.site-footer .support-link:hover, .site-footer .support-link:focus-visible { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+@media (max-width: 760px) {
+  body:not(.game-page) nav { gap: 4px; }
+  body:not(.game-page) nav a { padding: 8px 10px; }
+  .tool-teaser, .tool-download { grid-template-columns: 1fr; gap: 25px; padding-block: 35px; }
+  .tool-main { padding-top: 10px; }
+  .tool-repository { text-align: left; }
+  .tool-intro { padding-bottom: 30px; }
+  .demo-placeholder { min-height: 250px; padding: 22px; }
+}
+
+.tool-page .tool-download { border-bottom: 0; }
+
+.tool-intro .tool-logo { width: min(100%, 700px); height: auto; }
+.tool-teaser .tool-logo { width: min(100%, 420px); height: auto; }
+.tool-support { padding: 50px 20px 65px; border-top: 1px solid var(--line); text-align: center; }
+.tool-support h2 { font-size: clamp(26px, 3vw, 34px); font-weight: 400; letter-spacing: -.035em; }
+.tool-support p { margin: 18px auto 24px; max-width: 450px; color: var(--muted); }
+.kofi-sticker { display: inline-block; max-width: 100%; border-radius: 12px; }
+.kofi-sticker img { width: 210px; height: auto; }
+.kofi-sticker:hover { filter: brightness(1.08); }
+@media (max-width: 760px) { .tool-support { padding: 35px 0 45px; } }
+
+.github-button { gap: 14px; transition: background .15s ease, border-color .15s ease, transform .15s ease, box-shadow .15s ease; }
+.github-mark { display: block; flex: 0 0 28px; padding: 2px; border-radius: 50%; color: #111; background: transparent; transition: color .15s ease, background .15s ease; }
+a.github-button:hover, a.github-button:focus-visible { background: var(--accent); border-color: var(--accent); }
+a.github-button:hover .github-mark, a.github-button:focus-visible .github-mark { color: var(--accent); background: #111; }

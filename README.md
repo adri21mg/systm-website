@@ -1,6 +1,6 @@
 # Systm
 
-A complete, build-free static studio website. Three pages, plain HTML/CSS/JavaScript, no runtime dependencies, external fonts, analytics, forms, cookies, or services.
+A complete, build-free static studio website. Four pages, plain HTML/CSS/JavaScript, no runtime dependencies, external fonts, or analytics. Ko-fi uses one direct footer link per page, with a locally hosted GIF.
 
 ## View locally
 
@@ -49,3 +49,17 @@ Omit `--ffmpeg` to regenerate stills and logo copies, retaining optimized GIFs (
 ## Copy decisions
 
 The About page credits **Blades of Fire** and **Metroid Ravenous**, as specified by the owner. No release date, store availability, price, or additional gameplay mechanics have been invented.
+
+## Local LMMS-Collab proposal (not published)
+
+`docs/lmms-collab.html` is a local presentation prototype. The demo area is explicitly a placeholder; replace it with real Song Editor footage. Additional short demonstrations can go between the main demo and GitHub section once supplied. The GitHub button links to https://github.com/adri21mg/lmms-collab, with an inline GitHub mark and the site’s accent color on hover or keyboard focus.
+
+Studio navigation uses restrained rectangular hover targets. The TRAPPIST-1 cover navigation and existing media are unchanged. All footers use one branded link to https://ko-fi.com/systmstudio, with the supplied `Assets/ko-fi/Sparkle mug.gif` copied unchanged to `docs/media/kofi-sparkle.gif`. The image loads lazily and loops as provided. The original stays intact. There is no floating widget, embedded payment panel, separate support section, or external Ko-fi script. Payment takes place on Ko-fi after following the footer link.
+
+## YouTube trailer
+
+TRAPPIST-1 now embeds the supplied YouTube video `rQwITmcYSuk` using youtube-nocookie.com, lazy loading, a responsive 16:9 frame, fullscreen support, and a direct YouTube fallback link. Playback requires access to YouTube. The original local MP4 remains preserved but is no longer loaded by the page. Changes are local only.
+
+## LMMS-Collab identity and support
+
+The supplied `Assets/Logos/LMMS-Collab.svg` is copied unchanged into `docs/media/lmms-collab.svg` and used on Home and the tool page. LMMS-Collab has a centered closing support section, with `Support me 3.gif` as the clickable Ko-fi invitation. This replaces the short message above the footer button. The shared footer button remains on every page; no floating widget is loaded.

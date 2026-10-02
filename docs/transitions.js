@@ -53,7 +53,7 @@
       const link = event.target.closest('a[href]');
       if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || link.target || link.hasAttribute('download') || reducedMotion.matches) return;
       const target = new URL(link.href, location.href);
-      if (target.origin !== location.origin || !['http:', 'https:', 'file:'].includes(target.protocol) || !/\/(index|about|trappist-1)\.html$/.test(target.pathname) || target.pathname === location.pathname) return;
+      if (target.origin !== location.origin || !['http:', 'https:', 'file:'].includes(target.protocol) || !/\/(index|about|trappist-1|lmms-collab)\.html$/.test(target.pathname) || target.pathname === location.pathname) return;
       if (leaving) { event.preventDefault(); return; }
       event.preventDefault();
       leaving = true;
