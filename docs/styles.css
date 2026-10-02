@@ -278,3 +278,8 @@ a.github-button.secondary:hover, a.github-button.secondary:focus-visible { color
 a.github-button.secondary:hover .github-mark, a.github-button.secondary:focus-visible .github-mark { color: var(--accent); background: #111; }
 .tool-download .server-guide { margin-top: 26px; font-size: 14px; }
 @media (max-width: 760px) { .download-options { justify-content: flex-start; } }
+
+.session-feature { min-height: 320px; padding: 32px; border: 1px dashed var(--line); background: #151714; }
+.session-feature .eyebrow { color: var(--muted); }
+.session-feature h2 { margin-top: 20px; font-size: clamp(26px, 4vw, 44px); font-weight: 400; letter-spacing: -.045em; line-height: 1.6; }
+@media (max-width: 760px) { .session-feature { min-height: 250px; padding: 22px; } }

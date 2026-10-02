@@ -52,7 +52,7 @@ The About page credits **Blades of Fire** and **Metroid Ravenous**, as specified
 
 ## LMMS-Collab
 
-`docs/lmms-collab.html` presents the finished tool with direct Windows 64-bit installer and portable ZIP downloads, release notes, an explicit source-code link, and the server deployment guide. Download URLs use GitHub's `/releases/latest/download/` route and rely on future releases keeping the supplied asset filenames. The demo placeholder is removed until actual footage is supplied.
+`docs/lmms-collab.html` presents the finished tool with direct Windows 64-bit installer and portable ZIP downloads, release notes, an explicit source-code link, and the server deployment guide. Download URLs use GitHub's `/releases/latest/download/` route and rely on future releases keeping the supplied asset filenames. The contrasting Song Editor section retains “A session worth sharing.” without demo-pending copy; actual footage can be added when supplied.
 
 Studio navigation uses restrained rectangular hover targets. The TRAPPIST-1 cover navigation and existing media are unchanged. All footers use one branded link to https://ko-fi.com/systmstudio, with the supplied `Assets/ko-fi/Sparkle mug.gif` copied unchanged to `docs/media/kofi-sparkle.gif`. The image loads lazily and loops as provided. The original stays intact. There is no floating widget, embedded payment panel, or external Ko-fi script. Payment takes place on Ko-fi after following the footer link.
 
