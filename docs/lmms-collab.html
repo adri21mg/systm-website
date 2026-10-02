@@ -11,23 +11,39 @@
   <script src="transitions.js"></script>
   <script src="site.js" defer></script>
 </head>
-<body class="tool-page">
+<body class="tool-page media-tool-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header compact wrap">
     <a class="brand-link" href="index.html" aria-label="Systm home"><img class="studio-logo" src="media/systm.svg" width="3260" height="845" alt="Systm"></a>
     <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="lmms-collab.html" aria-current="page">Tools</a><a href="about.html">About</a><a href="mailto:adri.21mg@gmail.com">Contact <span aria-hidden="true">↗</span></a></nav>
   </header>
-  <main id="main" class="wrap tool-main">
-    <section class="tool-intro" aria-labelledby="tool-title">
-      <p class="eyebrow">Free &amp; open source</p>
-      <h1 id="tool-title"><img class="tool-logo" src="media/lmms-collab.svg" width="1611" height="204" alt="LMMS-Collab"></h1>
-      <p class="tool-tagline">Make music. Together.</p>
+  <main id="main">
+    <section class="tool-hero" aria-labelledby="tool-title">
+      <img class="tool-hero-art" src="media/lmms-session-1.gif" width="1920" height="1080" alt="A shared LMMS-Collab Song Editor session, with named cursors moving between tracks and patterns." fetchpriority="high">
+      <div class="tool-hero-copy wrap">
+        <p class="eyebrow">Free &amp; open source</p>
+        <h1 id="tool-title"><img class="tool-logo" src="media/lmms-collab.svg" width="1611" height="204" alt="LMMS-Collab"></h1>
+        <p class="tool-tagline">Make music. Together.</p>
+        <a class="text-link" href="#download-title">Get LMMS-Collab <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+    <div class="wrap tool-details">
       <p class="tool-description">A modified version of LMMS for making music with other people in the same session, at the same time.</p>
-    </section>
-    <section class="session-feature" aria-labelledby="session-title">
-      <p class="eyebrow">Song Editor / shared session</p>
-      <h2 id="session-title">A session worth sharing.</h2>
-    </section>
+      <figure class="session-photo">
+        <img src="media/lmms-cursors.webp" width="1280" height="720" alt="Ricardo’s orange cursor and Kevin’s blue cursor on different tracks in the same Song Editor session." loading="lazy">
+        <figcaption><span class="eyebrow">Shared session / named cursors</span><p>See who’s working alongside you.</p></figcaption>
+      </figure>
+      <section class="session-feature" aria-labelledby="session-title">
+        <div class="session-copy">
+          <p class="eyebrow">One session / shared ideas</p>
+          <h2 id="session-title">A session worth sharing.</h2>
+          <p>From the arrangement to the sound.<br>Work on instruments and effects together.</p>
+        </div>
+        <figure class="session-demo">
+          <img src="media/lmms-session-2.gif" width="1920" height="1080" alt="Named collaborators adjusting instruments and effects in the same LMMS-Collab session." loading="lazy">
+          <figcaption>Instruments, effects, and a few extra hands.</figcaption>
+        </figure>
+      </section>
     <section class="tool-download" aria-labelledby="download-title">
       <div><h2 id="download-title">Made to make things with.</h2><p>Based on LMMS. A collaborative modification by Systm.<br>Free to use, with the source code on GitHub.</p><p class="server-guide"><a href="https://github.com/adri21mg/lmms-collab/blob/master/collab/deploy/README.md" target="_blank" rel="noopener noreferrer">Set up your own server ↗</a></p></div>
       <div class="tool-repository">
@@ -48,6 +64,7 @@
       <p>If you find it useful, consider supporting my work.<br>It helps me keep making free tools and games.</p>
       <a class="kofi-sticker" href="https://ko-fi.com/systmstudio" target="_blank" rel="noopener noreferrer"><img src="media/kofi-support.gif" width="350" height="190" alt="Support me on Ko-fi" loading="lazy"></a>
     </section>
+    </div>
   </main>
   <footer class="site-footer wrap"><span>© Systm <span data-year>2026</span></span><a href="mailto:adri.21mg@gmail.com">adri.21mg@gmail.com <span aria-hidden="true">↗</span></a><a class="support-link" href="https://ko-fi.com/systmstudio" target="_blank" rel="noopener noreferrer"><img src="media/kofi-sparkle.gif" width="600" height="600" alt="" loading="lazy">Support me on Ko-fi</a></footer>
 </body>

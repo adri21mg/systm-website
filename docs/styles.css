@@ -283,3 +283,40 @@ a.github-button.secondary:hover .github-mark, a.github-button.secondary:focus-vi
 .session-feature .eyebrow { color: var(--muted); }
 .session-feature h2 { margin-top: 20px; font-size: clamp(26px, 4vw, 44px); font-weight: 400; letter-spacing: -.045em; line-height: 1.6; }
 @media (max-width: 760px) { .session-feature { min-height: 250px; padding: 22px; } }
+
+/* LMMS media cover: the editor stays readable, with a quiet title at its lower edge. */
+.media-tool-page > .site-header { position: absolute; z-index: 3; left: 50%; transform: translateX(-50%); }
+body.media-tool-page nav a { color: var(--text); text-shadow: 0 2px 6px #000; }
+body.media-tool-page nav a:hover, body.media-tool-page nav a:focus-visible { text-shadow: none; }
+.tool-hero { position: relative; isolation: isolate; min-height: min(950px, 100svh); display: flex; align-items: flex-end; background: #101110; }
+.tool-hero-art { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; }
+.tool-hero::after { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(180deg, rgb(0 0 0 / .96) 0%, rgb(0 0 0 / .88) 100px, rgb(0 0 0 / .35) 200px, transparent 320px), linear-gradient(180deg, transparent 48%, rgb(16 17 16 / .88) 83%, #101110); }
+.tool-hero-copy { padding-top: 200px; padding-bottom: 52px; }
+.tool-hero-copy .eyebrow { margin-bottom: 22px; }
+.tool-hero .tool-logo { width: min(700px, 75%); height: auto; }
+.tool-hero .tool-tagline { margin-top: 24px; }
+.tool-hero .text-link { margin-top: 24px; }
+.tool-details > .tool-description { max-width: 650px; margin: 34px 0 60px; font-size: 21px; }
+.tool-details .session-feature { display: grid; grid-template-columns: .75fr 1.5fr; gap: 36px; align-items: center; min-height: 0; padding: 36px; border: 1px solid var(--line); }
+.session-copy > p:last-child { margin-top: 22px; color: var(--muted); }
+.tool-details .session-feature h2 { line-height: 1.12; }
+.session-demo img { width: 100%; height: auto; }
+.session-demo figcaption { font-size: 11px; }
+@media (max-width: 760px) {
+  .media-tool-page > .site-header { position: static; transform: none; }
+  .tool-hero { display: block; min-height: 0; }
+  .tool-hero-art { position: relative; inset: auto; z-index: 0; width: 100%; height: auto; object-fit: contain; }
+  .tool-hero::after { display: none; }
+  .tool-hero-copy { padding-top: 30px; padding-bottom: 20px; }
+  .tool-hero .tool-logo { width: 100%; }
+  .tool-hero-copy .eyebrow { font-size: 11px; margin-bottom: 16px; }
+  .tool-hero .tool-tagline { margin-top: 20px; }
+  .tool-details > .tool-description { font-size: 18px; margin: 16px 0 35px; }
+  .tool-details .session-feature { grid-template-columns: 1fr; gap: 26px; padding: 22px; }
+}
+
+.session-photo { display: grid; grid-template-columns: 1.5fr .75fr; gap: 36px; align-items: center; padding: 36px; border: 1px solid transparent; margin: -20px 0 36px; }
+.session-photo img { width: 100%; height: auto; }
+.session-photo figcaption { margin: 0; font: 16px/1.6 Arial, Helvetica, sans-serif; }
+.session-photo figcaption p { margin-top: 16px; color: var(--text); font-size: 24px; letter-spacing: -.03em; line-height: 1.3; }
+@media (max-width: 760px) { .session-photo { grid-template-columns: 1fr; gap: 20px; padding: 22px; margin: -10px 0 24px; } }

@@ -35,3 +35,9 @@ Game artwork and studio branding use supplied assets. No stock or generated imag
 - `docs/media/steam.webp`: 196 × 60 transparent Steam icon and wordmark, downloaded from the user-requested [Katanaut reference asset](https://www.voidmaw.com/static/media/steam.3becf52f3e92d13ff286.webp). Used locally in both Steam buttons; no external image requests.
 
 Visual direction: a charcoal page, the white Systm mark, quiet typography, very short copy, large gameplay imagery, and a small humorous interruption. Reference sites informed the simplicity and personal scale; their artwork, branding, layout, and copy were not copied.
+
+## LMMS-Collab media
+
+- `Assets/LMMS-Collab/gif1.gif`: 1920 × 1080, 29.2 seconds, ~6.7 MB. Shared Song Editor with named cursors. Used as the main cover; original preserved and public GIF copied unchanged.
+- `Assets/LMMS-Collab/gif2.gif`: 1920 × 1080, 20.84 seconds, ~7.1 MB. Collaborative instrument/effect adjustments. Used in the lower feature section, lazy-loaded; original preserved.
+- `Assets/LMMS-Collab/photo1.jpg`: 1920 × 1080. Two named cursors in Song Editor. Shown below the introductory description, with an optimized 1280 × 720 WebP copy; the original is preserved.
