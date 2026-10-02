@@ -50,16 +50,16 @@ Omit `--ffmpeg` to regenerate stills and logo copies, retaining optimized GIFs (
 
 The About page credits **Blades of Fire** and **Metroid Ravenous**, as specified by the owner. No release date, store availability, price, or additional gameplay mechanics have been invented.
 
-## Local LMMS-Collab proposal (not published)
+## LMMS-Collab
 
-`docs/lmms-collab.html` is a local presentation prototype. The demo area is explicitly a placeholder; replace it with real Song Editor footage. Additional short demonstrations can go between the main demo and GitHub section once supplied. The GitHub button links to https://github.com/adri21mg/lmms-collab, with an inline GitHub mark and the site’s accent color on hover or keyboard focus.
+`docs/lmms-collab.html` presents the finished tool with direct Windows 64-bit installer and portable ZIP downloads, release notes, an explicit source-code link, and the server deployment guide. Download URLs use GitHub's `/releases/latest/download/` route and rely on future releases keeping the supplied asset filenames. The demo placeholder is removed until actual footage is supplied.
 
-Studio navigation uses restrained rectangular hover targets. The TRAPPIST-1 cover navigation and existing media are unchanged. All footers use one branded link to https://ko-fi.com/systmstudio, with the supplied `Assets/ko-fi/Sparkle mug.gif` copied unchanged to `docs/media/kofi-sparkle.gif`. The image loads lazily and loops as provided. The original stays intact. There is no floating widget, embedded payment panel, separate support section, or external Ko-fi script. Payment takes place on Ko-fi after following the footer link.
+Studio navigation uses restrained rectangular hover targets. The TRAPPIST-1 cover navigation and existing media are unchanged. All footers use one branded link to https://ko-fi.com/systmstudio, with the supplied `Assets/ko-fi/Sparkle mug.gif` copied unchanged to `docs/media/kofi-sparkle.gif`. The image loads lazily and loops as provided. The original stays intact. There is no floating widget, embedded payment panel, or external Ko-fi script. Payment takes place on Ko-fi after following the footer link.
 
 ## YouTube trailer
 
-TRAPPIST-1 now embeds the supplied YouTube video `rQwITmcYSuk` using youtube-nocookie.com, lazy loading, a responsive 16:9 frame, fullscreen support, and a direct YouTube fallback link. Playback requires access to YouTube. The original local MP4 remains preserved but is no longer loaded by the page. Changes are local only.
+TRAPPIST-1 now embeds the supplied YouTube video `rQwITmcYSuk` using youtube-nocookie.com, lazy loading, a responsive 16:9 frame, fullscreen support, and a direct YouTube fallback link. Playback requires access to YouTube. The original local MP4 remains preserved but is no longer loaded by the page.
 
 ## LMMS-Collab identity and support
 
-The supplied `Assets/Logos/LMMS-Collab.svg` is copied unchanged into `docs/media/lmms-collab.svg` and used on Home and the tool page. LMMS-Collab has a centered closing support section, with `Support me 3.gif` as the clickable Ko-fi invitation. This replaces the short message above the footer button. The shared footer button remains on every page; no floating widget is loaded.
+The supplied `Assets/Logos/LMMS-Collab2.svg` is copied unchanged into `docs/media/lmms-collab.svg` and used on Home and the tool page. LMMS-Collab has a centered closing support section, with `Support me 3.gif` as the clickable Ko-fi invitation. This replaces the short message above the footer button. The shared footer button remains on every page; no floating widget is loaded.
